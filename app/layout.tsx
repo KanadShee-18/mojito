@@ -35,8 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${dmSerifText.variable} ${monaSans.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${dmSerifText.variable} ${monaSans.className} antialiased`}
       >
         {children}
       </body>
