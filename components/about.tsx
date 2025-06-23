@@ -32,7 +32,7 @@ export const AboutSection = () => {
           yPercent: 100,
           duration: 1,
           ease: "power1.inOut",
-          stagger: 0.375,
+          stagger: 0.0375,
         },
         "-=0.5"
       );
