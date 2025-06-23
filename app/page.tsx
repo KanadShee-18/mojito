@@ -20,6 +20,7 @@ const page = () => {
       <AboutSection />
       <ArtSection />
       <MenuSection />
+      <div className="h-[200vh]" />
     </main>
   );
 };

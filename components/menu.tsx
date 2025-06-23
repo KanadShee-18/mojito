@@ -63,26 +63,19 @@ export const MenuSection = () => {
     );
   }, [currentIndex]);
 
-  //   useGSAP(() => {
-  //     const parallaxTimeline = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: "#menu",
-  //         start: "top 30%",
-  //         end: "bottom 80%",
-  //         scrub: true,
-  //       },
-  //     });
-
-  //     parallaxTimeline
-  //       .from("#m-left-leaf", {
-  //         x: -100,
-  //         y: 100,
-  //       })
-  //       .from("#m-right-leaf", {
-  //         x: 100,
-  //         y: 100,
-  //       });
-  //   }, []);
+  useGSAP(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#menu",
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      })
+      .to("#m-right-leaf", { y: 400 }, 0)
+      .to("#m-left-leaf", { y: -300 }, 0);
+  }, []);
 
   const totalLists = sliderLists.length;
 

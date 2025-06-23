@@ -5,6 +5,10 @@
   --foreground: #171717;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: "Modern Negra";
   src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
