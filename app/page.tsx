@@ -12,7 +12,6 @@ const page = () => {
     <main>
       <Navbar />
       <HeroSection />
-      <div className="h-dvh bg-black" />
     </main>
   );
 };
